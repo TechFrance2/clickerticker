@@ -6,10 +6,11 @@ function App() {
   //a) state object (getter)
   // b) updater function (setter)
   const [counter, setCounter] = useState(0);
+  const handleClick = () => setCounter(counter + 1);
   return (
     //onClick = {functionRef}
     <div className="App">
-      <button onClick={() => setCounter(counter + 1)}>{counter}</button>
+      <button onClick={handleClick}>{counter}</button>
     </div>
   );
 }
