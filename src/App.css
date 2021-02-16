@@ -1,13 +1,11 @@
 .App {
   text-align: center;
-  font-size: large;
+  font-size: larger;
+  background-color: blueviolet;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 .Message {
   text-align: center;
   font-size: large;
+  background-color: aqua;
 }
