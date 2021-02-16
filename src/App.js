@@ -1,16 +1,15 @@
 import React, { useState } from "react";
+import Display from "./Display";
+import Button from "./Button";
 import "./App.css";
 
 function App() {
-  // useState() results:
-  //a) state object (getter)
-  // b) updater function (setter)
-  const [counter, setCounter] = useState(0);
-  const handleClick = () => setCounter(counter + 1);
+  const [counter, setCounter] = useState(42);
+  const incrementCounter = () => setCounter(counter + 1);
   return (
-    //onClick = {functionRef}
-    <div className="App">
-      <button onClick={handleClick}>{counter}</button>
+    <div>
+      <Button onClickFunction={incrementCounter} />
+      <Display message={counter} />
     </div>
   );
 }
